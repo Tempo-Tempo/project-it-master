@@ -1,0 +1,41 @@
+.font_s {
+   font-size: 8px;
+}
+
+.font_m {
+   font-size: 16px;
+   line-height: 19px;
+   margin: 0;
+}
+
+.font_l {
+   font-size: 24px;
+   margin: 0;
+}
+
+.font_xl {
+   font-size: 36px;
+   margin: 0;
+}
+
+.font_xxl {
+   font-size: 40px;
+   line-height: 60px;
+   margin: 0;
+}
+
+.center {
+   text-align: center;
+}
+
+.left {
+   text-align: left;
+}
+
+.right {
+   text-align: right;
+}
+
+p {
+   margin: 5px;
+}

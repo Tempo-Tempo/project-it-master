@@ -1,0 +1,56 @@
+.wrapper_history {
+   width: 100%;
+   height: 100%;
+   background-color: #F6F6F6;
+   margin-top: 50px;
+}
+
+.items_history {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 90px;
+   padding-bottom : 80px;
+   border-bottom: 1px solid #a1a1a1a7;
+}
+
+
+.item_info {
+   margin-right: 6%;
+}
+
+.text_history {
+   margin-top: 30px;
+   line-height: 25px;
+}
+
+.link_history {
+   transition: 0.3s all;
+   margin-top: 20px;
+}
+
+.link_history:hover {
+   transition: 0.3s all;
+   opacity: 0.5;
+}
+
+.counters_employes {
+   display: flex;
+   justify-content: space-around;
+   padding-bottom: 60px;
+   padding-top: 60px;
+}
+
+.title_counter {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.counter {
+   width: 20%;
+}
+
+.text_counter {
+   margin-left: 20px;
+}

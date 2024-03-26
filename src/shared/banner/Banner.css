@@ -1,0 +1,18 @@
+.banner {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+}
+
+.text_banner {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   bottom: 30%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 1;
+}

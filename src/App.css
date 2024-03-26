@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  margin-left: 18%;
+  margin-right: 18%;
+  height: 100%;
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+ }

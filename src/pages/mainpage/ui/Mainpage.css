@@ -1,0 +1,21 @@
+.main_page {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+.main_banner {
+   position: absolute;
+   width: 100%;
+   z-index: 1;
+}
+
+.main_navbar {
+   z-index: 2;
+}
+
+
+.test {
+   height: 103vh;
+   z-index: -1;
+}
