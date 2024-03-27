@@ -3,7 +3,7 @@ import React from 'react';
 export interface ImagesProps {
    className?: string,
    img: string,
-   width: number,
+   width?: number,
    height?: number,
 }
 

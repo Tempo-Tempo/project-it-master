@@ -25,11 +25,5 @@
 }
 
 .link_history {
-   transition: 0.3s all;
    margin-top: 20px;
-}
-
-.link_history:hover {
-   transition: 0.3s all;
-   opacity: 0.5;
 }
