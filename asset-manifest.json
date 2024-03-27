@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/project-it-master/static/css/main.70e9f411.css",
-    "main.js": "/project-it-master/static/js/main.7dddd440.js",
+    "main.css": "/project-it-master/static/css/main.3e674e15.css",
+    "main.js": "/project-it-master/static/js/main.107da1ef.js",
     "static/media/mainPic.png": "/project-it-master/static/media/mainPic.72d5bed9b30bc0e794e2.png",
+    "static/media/mainPicLong.png": "/project-it-master/static/media/mainPicLong.eb6806852a09f34fb3da.png",
     "static/media/history.png": "/project-it-master/static/media/history.2500d09816736566ba48.png",
+    "static/media/works1.png": "/project-it-master/static/media/works1.241c3b1fa2d647f479d2.png",
     "static/media/analysisDate.jpg": "/project-it-master/static/media/analysisDate.e3cee0a2f6db57c1db60.jpg",
     "static/media/devsoftware.jpg": "/project-it-master/static/media/devsoftware.3392accb82c3f4a50b43.jpg",
     "static/media/sysadm.webp": "/project-it-master/static/media/sysadm.1d6f647d6b9d50e41e68.webp",
@@ -13,11 +15,11 @@
     "static/media/ingeners.svg": "/project-it-master/static/media/ingeners.875a5b5fb54724dbb4bcf755f713f9e0.svg",
     "static/media/dev.svg": "/project-it-master/static/media/dev.5931f5133247c337aab943321454f7d9.svg",
     "index.html": "/project-it-master/index.html",
-    "main.70e9f411.css.map": "/project-it-master/static/css/main.70e9f411.css.map",
-    "main.7dddd440.js.map": "/project-it-master/static/js/main.7dddd440.js.map"
+    "main.3e674e15.css.map": "/project-it-master/static/css/main.3e674e15.css.map",
+    "main.107da1ef.js.map": "/project-it-master/static/js/main.107da1ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.70e9f411.css",
-    "static/js/main.7dddd440.js"
+    "static/css/main.3e674e15.css",
+    "static/js/main.107da1ef.js"
   ]
 }
