@@ -33,24 +33,3 @@
    transition: 0.3s all;
    opacity: 0.5;
 }
-
-.counters_employes {
-   display: flex;
-   justify-content: space-around;
-   padding-bottom: 60px;
-   padding-top: 60px;
-}
-
-.title_counter {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.counter {
-   width: 20%;
-}
-
-.text_counter {
-   margin-left: 20px;
-}
