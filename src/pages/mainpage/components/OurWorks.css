@@ -1,0 +1,32 @@
+.wrapper_outwork {
+   width: 100%;
+   height: 100%;
+   background-color: #F6F6F8;
+   margin-top: 5%;
+   padding-bottom: 6%;
+}
+
+.wrapper_outwork .container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.outwork_title {
+   padding-top: 80px;
+   padding-bottom: 40px;
+}
+
+.outwork_body {
+   width: 70%;
+   margin-bottom: 5%;
+}
+
+.outwork_items {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-bottom: 50px;
+}

@@ -14,8 +14,8 @@ export const HistoryCompany = () => {
                   <div className='title_history'><Texts 
                      color={'black'} 
                      align={TextAlign.left} 
-                     size={TextSize.XL} text='Нас интересуют только высокие стандарты работ'
-                     width={600}
+                     size={TextSize.XL} text='Нас интересуют только высокие стандарты работы'
+                     width={700}
                      />
                   <div className='text_history'><Texts 
                      text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eveniet, 

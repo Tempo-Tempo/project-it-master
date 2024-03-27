@@ -13,10 +13,10 @@ export const AbousServices = () => {
          <div className='container'>
             <div className='title_about_services'>
                <span className='subtitle_about_services'>
-                  <Texts size={TextSize.XL} width={600} text='Наши работы, на которых мы специализируемся'/>
+                  <Texts size={TextSize.XL} width={700} text='Основные направления, на которых мы специализируемся'/>
                </span> 
                 <Buttons size={SizeButtons.L}>
-                  <Texts align='center' width={600} text='Заказать услуги'/>
+                  <Texts align='center' size={TextSize.M} width={600} text='Заказать услуги'/>
                 </Buttons>
             </div>
             <div className='items_abouts_services'>

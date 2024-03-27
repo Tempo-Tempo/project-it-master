@@ -13,7 +13,7 @@ export const Services = () => {
             color={'black'} 
             align={TextAlign.center} 
             size={TextSize.XL} text='Мы занимаемся разработкой приложений для различных платформ'
-            width={600}
+            width={700}
             />
              <div className='text_services'><Texts 
              text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eveniet, 
