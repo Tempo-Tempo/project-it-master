@@ -5,11 +5,19 @@ import { TextAlign, TextSize, Texts } from '../../../shared/ui/texts/Texts.tsx';
 import './Services.css'
 import { Buttons, SizeButtons } from '../../../shared/ui/buttons/Buttons.tsx';
 
-export const Services = () => {
+interface ServicesProps {
+   showComponent: boolean,
+}
+
+
+export const Services = ({ showComponent }: ServicesProps) => {
+
+   const testStyle = showComponent ? 'active' : 'nonactive';
+
    return (
       <div className='container'>
          <div className='wrapper_services'>
-            <div className='title_services'><Texts 
+            <div className={`title_services ${testStyle}`}><Texts 
             color={'black'} 
             align={TextAlign.center} 
             size={TextSize.XL} text='Мы занимаемся разработкой приложений для различных платформ'
@@ -24,7 +32,7 @@ export const Services = () => {
             />
             </div>
             </div>
-            <ul className='items_services'>
+            <ul className={`items_services ${testStyle}`}>
                <li className='item_services'>
                   <span className='img_wrapper'>
                      <span className='img_wrapper_v2'>

@@ -8,9 +8,15 @@ import buisnesImg from '../../../shared/icons/buis.analit.svg';
 import developImg from '../../../shared/icons/dev.svg';
 import './CounterEmployes.css';
 
-export const CounterEmployes = () => {
+interface CounterEmployesProps {
+   showCounter: boolean,
+}
+
+export const CounterEmployes = ({ showCounter }: CounterEmployesProps) => {
+   const counterStyle = showCounter ? 'active' : 'nonactive';
+   console.log(counterStyle)
    return (
-      <div className='counters_employes'>
+      <div className={`counters_employes ${counterStyle}`}>
       <div className='counter'>
          <div className='title_counter'>
          <span>

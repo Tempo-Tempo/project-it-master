@@ -8,14 +8,35 @@
    position: absolute;
    width: 100%;
    z-index: 1;
+   transition: 0.6s all;
 }
 
 .main_navbar {
    z-index: 2;
 }
 
+.main_services {
+   width: 100%;
+   transform: scale(1);
+   transition: 0.6s all;
+   opacity: 1;
+}
+
+.nonactive {
+   transform: scale(0.5);
+   transform: translateY(50%);
+   transition: 1.5s all;
+   opacity: 0.3;
+}
+
+.active {
+   width: 100%;
+   transform: scale(1);
+   transition: 1.5s all;
+   opacity: 1;
+}
 
 .test {
-   height: 103vh;
+   min-height: 950px;
    z-index: -1;
 }

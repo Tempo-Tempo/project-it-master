@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useRef} from 'react';
 import './Mainpage.css'
 import { Navbar } from '../../../widget/navbar/index.tsx';
 import { Banner } from '../../../shared/banner/Banner.tsx';
@@ -11,6 +11,43 @@ import { SubscribeMe } from '../components/SubscribeMe.tsx';
 import { Footerbar } from '../../../widget/footerbar/index.tsx';
 
 const Mainpage = () => {
+
+   const [showComponentServices, setShowComponentServices] = useState(false);
+   
+   const [showComponentHistory, setShowComponentHistory] = useState(false);
+
+   const [showComponentCounter, setShowComponentCounter] = useState(false);
+
+   const testRef = useRef<any>(null)
+
+
+   useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
+    // Разобраться с инструментами и настроить нормальные эффекты при скорле 
+
+    const handleScroll = () => {
+      let scroll = window.scrollY;
+      switch(true) {
+         case (scroll > 0 && scroll < 1050):
+            console.log(testRef.current.getBoundingClientRect(), 'Координаты блока ');
+            console.log(scroll, 'Координата скорлла');
+            return setShowComponentServices(true);
+         case (scroll > 1050 && scroll < 1249):
+            return setShowComponentHistory(true);
+         case (scroll > 0 && scroll < 1350):
+            console.log('test')
+            setShowComponentCounter(true);
+            console.log(showComponentCounter, '1');
+            console.log(showComponentHistory, '2');
+            return
+      }
+    };
+
    return (
       <div className='main_page'>
          <span  className='main_navbar'>
@@ -19,12 +56,12 @@ const Mainpage = () => {
          <span className='main_banner'>
            <Banner /> 
          </span> 
-         <div className='test' />
+         <div ref={testRef} className='test' />
          <span className='main_services'>
-            <Services />
+            <Services showComponent={showComponentServices}/>
          </span>
          <span className='main_history'>
-            <HistoryCompany />
+            <HistoryCompany showCounter={showComponentCounter} showComponent={showComponentHistory}/>
          </span>
          <span className='main_about_services'>
             <AbousServices />

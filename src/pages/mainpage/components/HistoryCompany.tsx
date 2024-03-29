@@ -5,13 +5,21 @@ import { Images } from '../../../shared/ui/images/Images.tsx';
 import img from '../../../shared/assets/history.png';
 import { CounterEmployes } from './CounterEmployes.tsx';
 
-export const HistoryCompany = () => {
+interface ServicesProps {
+   showComponent: boolean,
+   showCounter: boolean,
+}
+
+
+export const HistoryCompany = ({ showComponent, showCounter }: ServicesProps) => {
+   console.log(showCounter, 'showcounter')
+   const testStyle = showComponent ? 'active' : 'nonactive';
    return (
       <div className='wrapper_history'>
          <div className='container'>
-            <div className='items_history'>
+            <div className='items_history' >
                <div className='item_info'>
-                  <div className='title_history'><Texts 
+                  <div className={`title_history ${testStyle}`}><Texts 
                      color={'black'} 
                      align={TextAlign.left} 
                      size={TextSize.XL} text='Нас интересуют только высокие стандарты работы'
@@ -36,11 +44,11 @@ export const HistoryCompany = () => {
                      </div>
                   </div>
                </div>
-               <div className='picture_item'>
+               <div className={`picture_item ${testStyle}`}>
                   <Images width={550} img={img}/>
                </div>
             </div>
-            <CounterEmployes />
+            <CounterEmployes showCounter={showCounter}/>
          </div>
       </div>
    );
