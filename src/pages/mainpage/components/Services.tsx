@@ -1,23 +1,25 @@
 import React from 'react';
-import dev from '../../../shared/icons/dev.svg'
+import dev from '../../../shared/icons/dev.svg';
 import { Images } from '../../../shared/ui/images/Images.tsx';
 import { TextAlign, TextSize, Texts } from '../../../shared/ui/texts/Texts.tsx';
 import './Services.css'
 import { Buttons, SizeButtons } from '../../../shared/ui/buttons/Buttons.tsx';
-
-interface ServicesProps {
-   showComponent: boolean,
-}
+import { useInView } from 'react-intersection-observer';
 
 
-export const Services = ({ showComponent }: ServicesProps) => {
+export const Services = () => {
+   const {ref, inView} = useInView({
+      threshold: 0.2,
+      triggerOnce: true
+   })
 
-   const testStyle = showComponent ? 'active' : 'nonactive';
+   const testStyle = inView ? 'active' : 'nonactive';
+
 
    return (
       <div className='container'>
          <div className='wrapper_services'>
-            <div className={`title_services ${testStyle}`}><Texts 
+            <div ref={ref} className={`title_services ${testStyle}`}><Texts 
             color={'black'} 
             align={TextAlign.center} 
             size={TextSize.XL} text='Мы занимаемся разработкой приложений для различных платформ'

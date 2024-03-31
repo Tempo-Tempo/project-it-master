@@ -7,16 +7,20 @@ import ingenerImg from '../../../shared/icons/ingeners.svg';
 import buisnesImg from '../../../shared/icons/buis.analit.svg';
 import developImg from '../../../shared/icons/dev.svg';
 import './CounterEmployes.css';
+import { useInView } from 'react-intersection-observer';
 
-interface CounterEmployesProps {
-   showCounter: boolean,
-}
 
-export const CounterEmployes = ({ showCounter }: CounterEmployesProps) => {
-   const counterStyle = showCounter ? 'active' : 'nonactive';
-   console.log(counterStyle)
+
+export const CounterEmployes = () => {
+
+   const {ref, inView} = useInView({
+      threshold: 0.2,
+      triggerOnce: true
+   })
+   const testStyle = inView ? 'active' : 'nonactive';
+   
    return (
-      <div className={`counters_employes ${counterStyle}`}>
+      <div ref={ref} className={`counters_employes ${testStyle}`}>
       <div className='counter'>
          <div className='title_counter'>
          <span>

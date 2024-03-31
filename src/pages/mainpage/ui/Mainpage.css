@@ -36,6 +36,19 @@
    opacity: 1;
 }
 
+.activeImg {
+   transform: scale(1);
+   transition: 1.5s all;
+   opacity: 1;
+}
+
+.nonactiveImg {
+   transform: scale(0.5);
+   transition: 1.5s all;
+   opacity: 0.3;
+}
+
+
 .test {
    min-height: 950px;
    z-index: -1;

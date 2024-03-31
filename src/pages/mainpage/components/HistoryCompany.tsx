@@ -4,20 +4,22 @@ import { Texts, TextAlign, TextSize } from '../../../shared/ui/texts/Texts.tsx';
 import { Images } from '../../../shared/ui/images/Images.tsx';
 import img from '../../../shared/assets/history.png';
 import { CounterEmployes } from './CounterEmployes.tsx';
-
-interface ServicesProps {
-   showComponent: boolean,
-   showCounter: boolean,
-}
+import { useInView } from 'react-intersection-observer';
 
 
-export const HistoryCompany = ({ showComponent, showCounter }: ServicesProps) => {
-   console.log(showCounter, 'showcounter')
-   const testStyle = showComponent ? 'active' : 'nonactive';
+export const HistoryCompany = () => {
+
+   const {ref, inView} = useInView({
+      threshold: 0.2,
+      triggerOnce: true
+   })
+
+   const testStyle = inView ? 'active' : 'nonactive';
+   const imgStyle = inView ? 'activeImg' : 'nonactiveImg';
    return (
       <div className='wrapper_history'>
          <div className='container'>
-            <div className='items_history' >
+            <div ref={ref} className='items_history' >
                <div className='item_info'>
                   <div className={`title_history ${testStyle}`}><Texts 
                      color={'black'} 
@@ -44,11 +46,11 @@ export const HistoryCompany = ({ showComponent, showCounter }: ServicesProps) =>
                      </div>
                   </div>
                </div>
-               <div className={`picture_item ${testStyle}`}>
+               <div ref={ref} className={`picture_item ${imgStyle}`}>
                   <Images width={550} img={img}/>
                </div>
             </div>
-            <CounterEmployes showCounter={showCounter}/>
+            <CounterEmployes/>
          </div>
       </div>
    );

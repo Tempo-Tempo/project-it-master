@@ -1,5 +1,5 @@
 import React from 'react';
-import { Texts, TextAlign, TextSize } from '../../../shared/ui/texts/Texts.tsx';
+import { Texts, TextSize } from '../../../shared/ui/texts/Texts.tsx';
 import './Footerbar.css';
 
 const Footerbar = () => {
