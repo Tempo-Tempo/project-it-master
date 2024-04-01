@@ -27,7 +27,7 @@ export const CounterEmployes = () => {
             <Images width={70} height={60} img={helpersImg}/>
          </span>
          <span className='text_counter'>
-         <Texts width={500} size={TextSize.XL} color='black' text='125'/>
+         <Texts width={500} size={TextSize.XL} color='black' text='8'/>
          </span>
       </div>
       <div className='body_counter'>
@@ -44,7 +44,7 @@ export const CounterEmployes = () => {
          <Images width={70} height={60} img={sysAdmImg}/>
          </span>
          <span className='text_counter'>
-            <Texts width={500} size={TextSize.XL} color='black' text='125'/>
+            <Texts width={500} size={TextSize.XL} color='black' text='10'/>
          </span>
       </div>
       <div className='body_counter'>
@@ -61,7 +61,7 @@ export const CounterEmployes = () => {
          <Images width={70} height={60} img={ingenerImg}/>
          </span>
          <span className='text_counter'>
-         <Texts width={500} size={TextSize.XL} color='black' text='125'/>
+         <Texts width={500} size={TextSize.XL} color='black' text='15'/>
          </span>
       </div>
       <div className='body_counter'>
@@ -78,7 +78,7 @@ export const CounterEmployes = () => {
          <Images width={70} height={60} img={buisnesImg}/>
          </span>
          <span className='text_counter'>
-         <Texts width={500} size={TextSize.XL} color='black' text='125'/>
+         <Texts width={500} size={TextSize.XL} color='black' text='12'/>
          </span>
       </div>
       <div className='body_counter'>
@@ -95,7 +95,7 @@ export const CounterEmployes = () => {
          <Images width={70} height={60} img={developImg}/>
          </span>
          <span className='text_counter'>
-         <Texts width={500} size={TextSize.XL} color='black' text='125'/>
+         <Texts width={500} size={TextSize.XL} color='black' text='7'/>
          </span>
       </div>
       <div className='body_counter'>

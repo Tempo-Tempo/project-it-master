@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef} from 'react';
-import { useInView } from 'react-intersection-observer';
+import React from 'react';
 import './Mainpage.css'
 import { Navbar } from '../../../widget/navbar/index.tsx';
 import { Banner } from '../../../shared/banner/Banner.tsx';
@@ -12,9 +11,6 @@ import { SubscribeMe } from '../components/SubscribeMe.tsx';
 import { Footerbar } from '../../../widget/footerbar/index.tsx';
 
 const Mainpage = () => {
-
-
-
    return (
       <div className='main_page'>
          <span  className='main_navbar'>
