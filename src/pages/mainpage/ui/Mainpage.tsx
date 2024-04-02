@@ -9,38 +9,55 @@ import { OurWorks } from '../components/OurWorks.tsx';
 import { VideosAboutWork } from '../components/VideosAboutWork.tsx';
 import { SubscribeMe } from '../components/SubscribeMe.tsx';
 import { Footerbar } from '../../../widget/footerbar/index.tsx';
+import { Modals } from '../../../shared/ui/modals/Modals.tsx';
+import { Inputs } from '../../../shared/ui/inputs/Inputs.tsx';
+import { Buttons, SizeButtons } from '../../../shared/ui/buttons/Buttons.tsx';
+import { TextSize, Texts } from '../../../shared/ui/texts/Texts.tsx';
 
 const Mainpage = () => {
+
+   const isClose = () => {
+      return;
+   }
+
    return (
       <div className='main_page'>
-         <span  className='main_navbar'>
+         {/* <div className='main_modal'>
+           <Modals isOpen={false} isClose={() => isClose()}>
+               <Inputs placeholder='Введите ваше имя'/>
+               <Inputs placeholder='Введите номер телефона'/>
+               <Buttons className={SizeButtons.L}><Texts align='center' size={TextSize.M} width={600} text='Подтвердить'/></Buttons>
+           </Modals>
+         </div> */}
+         
+         <section  className='main_navbar'>
             <Navbar />
-         </span>
-         <span className='main_banner'>
+         </section>
+         <section className='main_banner'>
            <Banner /> 
-         </span> 
+         </section> 
          <div className='test' />
-         <span className='main_services'>
+         <section className='main_services'>
             <Services />
-         </span>
-         <span className='main_history'>
+         </section>
+         <section className='main_history'>
             <HistoryCompany />
-         </span>
-         <span className='main_about_services'>
+         </section>
+         <section className='main_about_services'>
             <AbousServices />
-         </span>
-         <span className='main_ourworks'>
+         </section>
+         <section className='main_ourworks'>
             <OurWorks />
-         </span>
-         <span className='main_videos_about_work'>
+         </section>
+         <section className='main_videos_about_work'>
             <VideosAboutWork />
-         </span>
-         <span className='main_subscribe'>
+         </section>
+         <section className='main_subscribe'>
            <SubscribeMe />
-         </span>
-         <span className='main_footer'>
+         </section>
+         <section className='main_footer'>
            <Footerbar />
-         </span>
+         </section>
       </div>
    );
 };

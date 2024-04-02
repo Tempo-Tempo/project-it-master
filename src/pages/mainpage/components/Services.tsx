@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import middleware from '../../../shared/icons/servicesIcons/middleware.svg';
 import monitor from '../../../shared/icons/servicesIcons/monitor.svg';
 import network from '../../../shared/icons/servicesIcons/network.svg';
@@ -13,12 +13,20 @@ import { useInView } from 'react-intersection-observer';
 
 
 export const Services = () => {
+
+   const [servicesIsOpen, setServicesIsOpen] = useState(false);
+
    const {ref, inView} = useInView({
       threshold: 0.2,
       triggerOnce: true
    })
 
    const testStyle = inView ? 'active' : 'nonactive';
+   const openStyleServices = !servicesIsOpen ? 'items_services_open' : 'items_services_close';
+
+   const openMoreSrvices = () => {
+      setServicesIsOpen(prev => !prev);
+   }
 
    return (
       <div className='container'>
@@ -36,7 +44,8 @@ export const Services = () => {
             />
             </div>
             </div>
-            <ul className={`items_services ${testStyle}`}>
+            <div className={`${openStyleServices}`}>
+            <ul className={`items_services ${testStyle} ${openStyleServices}`}>
                <li className='item_services'>
                   <span className='img_wrapper'>
                      <span className='img_wrapper_v2'>
@@ -104,9 +113,13 @@ export const Services = () => {
                   </div>    
                </li>
             </ul>
-            <Buttons size={SizeButtons.L}>
-               <Texts size={TextSize.M} width={600} align={'center'} text='Все услуги'/>
+            </div>
+            { !servicesIsOpen ?  <Buttons onClick={openMoreSrvices} size={SizeButtons.L}>
+              <Texts size={TextSize.M} width={600} align={'center'} text='Все услуги'/>
+           </Buttons> : <Buttons onClick={openMoreSrvices} size={SizeButtons.L}>
+               <Texts size={TextSize.M} width={600} align={'center'} text='Скрыть'/>
             </Buttons>
+            }
          </div>
       </div>
    );

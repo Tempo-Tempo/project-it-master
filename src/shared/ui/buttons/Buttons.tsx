@@ -10,6 +10,7 @@ export enum SizeButtons {
   }
 
 interface ButtonsProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  className?: string,
   size?: SizeButtons;
   disabled?: boolean,
   children?: ReactNode
@@ -17,13 +18,13 @@ interface ButtonsProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Buttons = (props: ButtonsProps) => {
     const {
-         children, size = SizeButtons.default, disabled, ...otherProps
+         children, className, size = '', disabled, ...otherProps
     } = props;
     return (
         <button
             type="button"
             disabled={disabled}
-            className={size}
+            className={`${className} ${size} `}
             {...otherProps}
         >
             {children}
