@@ -1,6 +1,7 @@
 import React from 'react';
 import { Images } from '../../../shared/ui/images/Images.tsx';
 import bg from '../../../shared/assets/mainPicLong.png';
+import bg2 from '../../../shared/assets/bg_video.jpeg';
 import './VideosAboutWork.css';
 import { TextSize, Texts } from '../../../shared/ui/texts/Texts.tsx';
 import { useInView } from 'react-intersection-observer';
@@ -15,7 +16,7 @@ export const VideosAboutWork = () => {
    const imgStyle = inView ? 'activeImg' : 'nonactiveImg';
    return (
       <div className='wrapper_videos'>
-         <Images className='bg_videos' img={bg} />
+         <Images className='bg_videos' img={bg2} />
             <div ref={ref} className='body_wrapper'>
                 <div className={`title_videos ${testStyle}`}>
                <Texts text='Видео о нашей работе' align='center' size={TextSize.XL} width={700}/>

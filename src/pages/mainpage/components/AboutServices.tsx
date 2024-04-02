@@ -5,6 +5,9 @@ import { Images } from '../../../shared/ui/images/Images.tsx';
 import sysAdm from '../../../shared/assets/sysadm.webp';
 import dev from '../../../shared/assets/devsoftware.jpg';
 import analysis from '../../../shared/assets/analysisDate.jpg';
+import sysAdm2 from '../../../shared/assets/sysSecuri.jpeg';
+import dev2 from '../../../shared/assets/develop.jpeg';
+import analysis2 from '../../../shared/assets/dataAnalysis.jpeg';
 import { Buttons, SizeButtons } from '../../../shared/ui/buttons/Buttons.tsx';
 import { useInView } from 'react-intersection-observer';
 
@@ -29,7 +32,7 @@ export const AbousServices = () => {
             </div>
             <div className='items_abouts_services'>
                <div ref={ref} className='item_about_services'>
-                  <Images  className={`img_service ${imgStyle}`} height={300}  img={sysAdm} />
+                  <Images  className={`img_service ${imgStyle}`} height={300}  img={sysAdm2} />
                   <span className={`${testStyle}`}>
                       <span className='title_item'>
                      <span className='num_item'>01.</span>
@@ -49,7 +52,7 @@ export const AbousServices = () => {
                      /></a>
                </div>
                <div className='item_about_services'>
-                     <Images className={`img_service ${imgStyle}`} height={300} img={dev} />
+                     <Images className={`img_service ${imgStyle}`} height={300} img={dev2} />
                   <span className={`${testStyle}`}>
                         <span className='title_item'>
                      <span className='num_item'>02.</span>  
@@ -70,7 +73,7 @@ export const AbousServices = () => {
                      /></a>
                </div>
                <div className='item_about_services'>
-                     <Images height={300} className={`img_service ${imgStyle}`} img={analysis} />
+                     <Images height={300} className={`img_service ${imgStyle}`} img={analysis2} />
                   <span className={`${testStyle}`}>
                      <span className='title_item'>
                         <span className='num_item'>03.</span> 

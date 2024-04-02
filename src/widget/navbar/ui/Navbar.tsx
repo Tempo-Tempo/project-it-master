@@ -19,7 +19,7 @@ const Navbar = () => {
             </span>
          <ul className='main_header'>
             <nav>
-               <Texts text='Главная' size={TextSize.M}/>
+               <Texts text='Вакансии' size={TextSize.M}/>
             </nav>
             <nav>
                <Texts text='Наши проекты' size={TextSize.M}/>
