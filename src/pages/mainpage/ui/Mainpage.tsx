@@ -8,6 +8,8 @@ import { AbousServices } from '../components/AboutServices.tsx';
 import { OurWorks } from '../components/OurWorks.tsx';
 import { VideosAboutWork } from '../components/VideosAboutWork.tsx';
 import { SubscribeMe } from '../components/SubscribeMe.tsx';
+import { Footerbar } from '../../../widget/footerbar/index.tsx';
+
 const Mainpage = () => {
    return (
       <div className='main_page'>
@@ -35,6 +37,9 @@ const Mainpage = () => {
          </span>
          <span className='main_subscribe'>
            <SubscribeMe />
+         </span>
+         <span className='main_footer'>
+           <Footerbar />
          </span>
       </div>
    );

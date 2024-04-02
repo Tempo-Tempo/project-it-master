@@ -7,17 +7,27 @@ import ingenerImg from '../../../shared/icons/ingeners.svg';
 import buisnesImg from '../../../shared/icons/buis.analit.svg';
 import developImg from '../../../shared/icons/dev.svg';
 import './CounterEmployes.css';
+import { useInView } from 'react-intersection-observer';
+
+
 
 export const CounterEmployes = () => {
+
+   const {ref, inView} = useInView({
+      threshold: 0.2,
+      triggerOnce: true
+   })
+   const testStyle = inView ? 'active' : 'nonactive';
+   
    return (
-      <div className='counters_employes'>
+      <div ref={ref} className={`counters_employes ${testStyle}`}>
       <div className='counter'>
          <div className='title_counter'>
          <span>
             <Images width={70} height={60} img={helpersImg}/>
          </span>
          <span className='text_counter'>
-         <Texts width={500} size={TextSize.XL} color='black' text='125'/>
+         <Texts width={500} size={TextSize.XL} color='black' text='8'/>
          </span>
       </div>
       <div className='body_counter'>
@@ -34,7 +44,7 @@ export const CounterEmployes = () => {
          <Images width={70} height={60} img={sysAdmImg}/>
          </span>
          <span className='text_counter'>
-            <Texts width={500} size={TextSize.XL} color='black' text='125'/>
+            <Texts width={500} size={TextSize.XL} color='black' text='10'/>
          </span>
       </div>
       <div className='body_counter'>
@@ -51,7 +61,7 @@ export const CounterEmployes = () => {
          <Images width={70} height={60} img={ingenerImg}/>
          </span>
          <span className='text_counter'>
-         <Texts width={500} size={TextSize.XL} color='black' text='125'/>
+         <Texts width={500} size={TextSize.XL} color='black' text='15'/>
          </span>
       </div>
       <div className='body_counter'>
@@ -68,7 +78,7 @@ export const CounterEmployes = () => {
          <Images width={70} height={60} img={buisnesImg}/>
          </span>
          <span className='text_counter'>
-         <Texts width={500} size={TextSize.XL} color='black' text='125'/>
+         <Texts width={500} size={TextSize.XL} color='black' text='12'/>
          </span>
       </div>
       <div className='body_counter'>
@@ -85,7 +95,7 @@ export const CounterEmployes = () => {
          <Images width={70} height={60} img={developImg}/>
          </span>
          <span className='text_counter'>
-         <Texts width={500} size={TextSize.XL} color='black' text='125'/>
+         <Texts width={500} size={TextSize.XL} color='black' text='7'/>
          </span>
       </div>
       <div className='body_counter'>
