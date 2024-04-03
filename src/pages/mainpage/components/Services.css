@@ -27,13 +27,13 @@
 .items_services_open {
    height: auto;
    max-height: 200;
-   transition: all 0.5s ease-out;
+   transition: all 1s ease-out;
    overflow: hidden;
 }
 
 .items_services_close {
    max-height: 1000px;
-   transition: all 0.5s ease-in;
+   transition: all 1s ease-in;
 }
 
 .item_services {

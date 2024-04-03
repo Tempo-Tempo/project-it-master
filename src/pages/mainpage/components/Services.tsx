@@ -31,7 +31,7 @@ export const Services = () => {
    return (
       <div className='container'>
          <div className='wrapper_services'>
-            <div ref={ref} className={`title_services ${testStyle}`}><Texts 
+            <div className={`title_services`}><Texts 
             color={'black'} 
             align={TextAlign.center} 
             size={TextSize.XL} text='Мы готовы предложить улучшения IT-инфраструктуры вашего бизнеса'
@@ -45,7 +45,7 @@ export const Services = () => {
             </div>
             </div>
             <div className={`${openStyleServices}`}>
-            <ul className={`items_services ${testStyle} ${openStyleServices}`}>
+            <ul ref={ref} className={`items_services ${testStyle} ${openStyleServices}`}>
                <li className='item_services'>
                   <span className='img_wrapper'>
                      <span className='img_wrapper_v2'>

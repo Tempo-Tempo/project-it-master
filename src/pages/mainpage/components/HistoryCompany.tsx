@@ -11,7 +11,7 @@ import { useInView } from 'react-intersection-observer';
 export const HistoryCompany = () => {
 
    const {ref, inView} = useInView({
-      threshold: 0.2,
+      threshold: 0.3,
       triggerOnce: true
    })
 
@@ -22,7 +22,7 @@ export const HistoryCompany = () => {
          <div className='container'>
             <div ref={ref} className='items_history' >
                <div className='item_info'>
-                  <div className={`title_history ${testStyle}`}><Texts 
+                  <div className={`title_history `}><Texts 
                      color={'black'} 
                      align={TextAlign.left} 
                      size={TextSize.XL} text='Нас интересуют только высокие стандарты работы'
@@ -47,7 +47,7 @@ export const HistoryCompany = () => {
                      </div>
                   </div>
                </div>
-               <div ref={ref} className={`picture_item ${imgStyle}`}>
+               <div ref={ref} className={`picture_item ${testStyle}`}>
                   <Images className='picture_item' width={550} img={img2}/>
                </div>
             </div>
