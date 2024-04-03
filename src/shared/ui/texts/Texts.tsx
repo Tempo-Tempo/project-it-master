@@ -17,6 +17,7 @@ export enum TextSize {
 
 
 interface MyTextPorps {
+   className?: string,
    text?: string,
    align?: string,
    size?: string,
@@ -26,11 +27,11 @@ interface MyTextPorps {
 
 export const Texts = (props: MyTextPorps) => {
     const {
-        text, size, width, color = 'white', align = TextAlign.left,
+        text, size, width, className, color = '', align = TextAlign.left,
     } = props;
     return (
         <div className={align}>
-            <p style={{color: `${color}`, fontWeight: `${width}`}} className={size}>{text}</p>
+            <p style={{color: `${color}`, fontWeight: `${width}`}} className={`${className} ${size}`}>{text}</p>
         </div>
     );
 };

@@ -3,6 +3,7 @@ import './HistoryCompany.css';
 import { Texts, TextAlign, TextSize } from '../../../shared/ui/texts/Texts.tsx';
 import { Images } from '../../../shared/ui/images/Images.tsx';
 import img from '../../../shared/assets/history.png';
+import img2 from '../../../shared/assets/background-history.jpeg';
 import { CounterEmployes } from './CounterEmployes.tsx';
 import { useInView } from 'react-intersection-observer';
 
@@ -47,7 +48,7 @@ export const HistoryCompany = () => {
                   </div>
                </div>
                <div ref={ref} className={`picture_item ${imgStyle}`}>
-                  <Images width={550} img={img}/>
+                  <Images className='picture_item' width={550} img={img2}/>
                </div>
             </div>
             <CounterEmployes/>
