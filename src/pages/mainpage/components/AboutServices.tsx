@@ -1,14 +1,14 @@
 import React from 'react';
 import './AboutServices.css'
-import { TextSize, Texts, TextAlign } from '../../../shared/ui/texts/Texts.tsx';
-import { Images } from '../../../shared/ui/images/Images.tsx';
+import { TextSize, Texts, TextAlign } from '../../../shared/ui/texts/Texts';
+import { Images } from '../../../shared/ui/images/Images';
 import sysAdm from '../../../shared/assets/sysadm.webp';
 import dev from '../../../shared/assets/devsoftware.jpg';
 import analysis from '../../../shared/assets/analysisDate.jpg';
 import sysAdm2 from '../../../shared/assets/sysSecuri.jpeg';
 import dev2 from '../../../shared/assets/develop.jpeg';
 import analysis2 from '../../../shared/assets/dataAnalysis.jpeg';
-import { Buttons, SizeButtons } from '../../../shared/ui/buttons/Buttons.tsx';
+import { Buttons, SizeButtons } from '../../../shared/ui/buttons/Buttons';
 import { useInView } from 'react-intersection-observer';
 
 export const AbousServices = () => {

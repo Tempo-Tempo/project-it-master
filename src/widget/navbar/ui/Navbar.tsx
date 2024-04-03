@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import { TextSize, Texts } from '../../../shared/ui/texts/Texts.tsx';
+import { TextSize, Texts } from '../../../shared/ui/texts/Texts';
 import { useInView } from 'react-intersection-observer';
 
 const Navbar = () => {

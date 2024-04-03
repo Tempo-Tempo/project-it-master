@@ -1,10 +1,10 @@
 import React from 'react';
 import './HistoryCompany.css';
-import { Texts, TextAlign, TextSize } from '../../../shared/ui/texts/Texts.tsx';
-import { Images } from '../../../shared/ui/images/Images.tsx';
+import { Texts, TextAlign, TextSize } from '../../../shared/ui/texts/Texts';
+import { Images } from '../../../shared/ui/images/Images';
 import img from '../../../shared/assets/history.png';
 import img2 from '../../../shared/assets/background-history.jpeg';
-import { CounterEmployes } from './CounterEmployes.tsx';
+import { CounterEmployes } from './CounterEmployes';
 import { useInView } from 'react-intersection-observer';
 
 

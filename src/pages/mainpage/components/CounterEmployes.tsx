@@ -1,6 +1,6 @@
 import React from 'react';
-import { Images } from '../../../shared/ui/images/Images.tsx';
-import { Texts, TextAlign, TextSize } from '../../../shared/ui/texts/Texts.tsx';
+import { Images } from '../../../shared/ui/images/Images';
+import { Texts, TextAlign, TextSize } from '../../../shared/ui/texts/Texts';
 import helpersImg from '../../../shared/icons/helpers.svg';
 import sysAdmImg from '../../../shared/icons/sys.admin.svg';
 import ingenerImg from '../../../shared/icons/ingeners.svg';

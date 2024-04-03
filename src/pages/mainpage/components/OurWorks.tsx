@@ -1,8 +1,8 @@
 import React from 'react';
-import { Images } from '../../../shared/ui/images/Images.tsx';
-import { Texts, TextAlign, TextSize } from '../../../shared/ui/texts/Texts.tsx';
+import { Images } from '../../../shared/ui/images/Images';
+import { Texts, TextSize } from '../../../shared/ui/texts/Texts';
 import work1 from '../../../shared/assets/works1.png';
-import { Buttons, SizeButtons } from '../../../shared/ui/buttons/Buttons.tsx';
+import { Buttons, SizeButtons } from '../../../shared/ui/buttons/Buttons';
 import { useInView } from 'react-intersection-observer';
 import './OurWorks.css';
 

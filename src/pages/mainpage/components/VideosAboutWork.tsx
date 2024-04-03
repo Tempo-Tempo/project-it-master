@@ -1,9 +1,9 @@
 import React from 'react';
-import { Images } from '../../../shared/ui/images/Images.tsx';
+import { Images } from '../../../shared/ui/images/Images';
 import bg from '../../../shared/assets/mainPicLong.png';
 import bg2 from '../../../shared/assets/bg_video.jpeg';
 import './VideosAboutWork.css';
-import { TextSize, Texts } from '../../../shared/ui/texts/Texts.tsx';
+import { TextSize, Texts } from '../../../shared/ui/texts/Texts';
 import { useInView } from 'react-intersection-observer';
 
 export const VideosAboutWork = () => {
@@ -13,6 +13,7 @@ export const VideosAboutWork = () => {
    })
 
    const testStyle = inView ? 'active' : 'nonactive';
+
    return (
       <div className='wrapper_videos'>
          <Images className='bg_videos' img={bg2} />
@@ -24,7 +25,7 @@ export const VideosAboutWork = () => {
                <Texts text='Просто посмотрите как мы работаем' align='center' size={TextSize.M} width={500}/>
             </div>
             <div className={`video_test ${testStyle}`}>
-            <iframe className='video_test' width="710" height="425" src="https://www.youtube.com/embed/BV_QUsOOmW4?si=Ucf58LuBVYSnu96v" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe className='video_test' width="710" height="425" src="https://www.youtube.com/embed/BV_QUsOOmW4?si=Ucf58LuBVYSnu96v" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
             </div>
              </div>
       </div>

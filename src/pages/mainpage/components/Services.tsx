@@ -5,10 +5,10 @@ import network from '../../../shared/icons/servicesIcons/network.svg';
 import camera from '../../../shared/icons/servicesIcons/bullet.svg';
 import buisnes from '../../../shared/icons/servicesIcons/buisnes.svg';
 import datebase from '../../../shared/icons/servicesIcons/database.svg';
-import { Images } from '../../../shared/ui/images/Images.tsx';
-import { TextAlign, TextSize, Texts } from '../../../shared/ui/texts/Texts.tsx';
+import { Images } from '../../../shared/ui/images/Images';
+import { TextAlign, TextSize, Texts } from '../../../shared/ui/texts/Texts';
 import './Services.css'
-import { Buttons, SizeButtons } from '../../../shared/ui/buttons/Buttons.tsx';
+import { Buttons, SizeButtons } from '../../../shared/ui/buttons/Buttons';
 import { useInView } from 'react-intersection-observer';
 
 

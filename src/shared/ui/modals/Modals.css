@@ -6,43 +6,70 @@
     right: 0;
     opacity: 0;
     pointer-events: none;
+    width: 100%;
+    height: 100vh;
+    transition: 1s all;
 }
 
 .modal_overlay {
+    position: fixed;
+    opacity: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: rgb(0 0 0 / 50%);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s all;
 }
 
 .modal_content {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F6F6;
     border: 1px solid #4985FF;
-    max-width: 60%;
-    max-height: 60%;
+    width: 20%;
+    height: 30%;
     border-radius: 20px;
+    padding: 20px 45px 30px 45px;
     text-align: center;
-    transition: 0.3s transform;
+    transition: 1s all;
     transform: scale(0.5);
+    line-height: 55px;
+}
+
+.title_content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .oppened {
     opacity: 1;
     pointer-events: auto;
     z-index: 5;
+    transition: 1s all;
 
     .modal_content {
-        transition: 0.3s transform;
         transform: scale(1);
+        transition: 1s all;
     }
 }
 
-.isClosing {
-    opacity: 1;
-    .modal_content {
-        transition: 0.3s transform;
-        transform: scale(0.3);
-    }
+.is_closing {
+    opacity: 0;
+    transition: 1s all;  
+}
+
+.modal_close {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.modal_close:hover {
+    opacity: 0.5;
 }
