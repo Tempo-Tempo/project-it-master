@@ -1,10 +1,9 @@
 import React from 'react';
-import { Images } from '../../../shared/ui/images/Images';
-import bg from '../../../shared/assets/mainPicLong.png';
-import bg2 from '../../../shared/assets/bg_video.jpeg';
-import './VideosAboutWork.css';
-import { TextSize, Texts } from '../../../shared/ui/texts/Texts';
+import { Images } from 'shared/ui/images/Images';
+import bg2 from 'shared/assets/bg_video.jpeg';
+import { TextSize, Texts } from 'shared/ui/texts/Texts';
 import { useInView } from 'react-intersection-observer';
+import './VideosAboutWork.css';
 
 export const VideosAboutWork = () => {
    const {ref, inView} = useInView({

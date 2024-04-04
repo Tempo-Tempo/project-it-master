@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
-import middleware from '../../../shared/icons/servicesIcons/middleware.svg';
-import monitor from '../../../shared/icons/servicesIcons/monitor.svg';
-import network from '../../../shared/icons/servicesIcons/network.svg';
-import camera from '../../../shared/icons/servicesIcons/bullet.svg';
-import buisnes from '../../../shared/icons/servicesIcons/buisnes.svg';
-import datebase from '../../../shared/icons/servicesIcons/database.svg';
-import { Images } from '../../../shared/ui/images/Images';
-import { TextAlign, TextSize, Texts } from '../../../shared/ui/texts/Texts';
-import './Services.css'
-import { Buttons, SizeButtons } from '../../../shared/ui/buttons/Buttons';
+import middleware from 'shared/icons/servicesIcons/middleware.svg';
+import monitor from 'shared/icons/servicesIcons/monitor.svg';
+import network from 'shared/icons/servicesIcons/network.svg';
+import camera from 'shared/icons/servicesIcons/bullet.svg';
+import buisnes from 'shared/icons/servicesIcons/buisnes.svg';
+import datebase from 'shared/icons/servicesIcons/database.svg';
+import { Images } from 'shared/ui/images/Images';
+import { TextAlign, TextSize, Texts } from 'shared/ui/texts/Texts';
+import { Buttons, SizeButtons } from 'shared/ui/buttons/Buttons';
 import { useInView } from 'react-intersection-observer';
-
+import './Services.css';
 
 export const Services = () => {
 

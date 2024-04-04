@@ -14,7 +14,8 @@
     "paths": {
       "shared/*": ["shared/*"],
       "widget/*": ["widget/*"],
-      "features/*": ["feature/*"]
+      "features/*": ["features/*"],
+      "pages/*": ["pages/*"]
     },
     "jsx": "react"
   },

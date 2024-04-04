@@ -1,12 +1,16 @@
 import React from 'react';
-import { Images } from '../../../shared/ui/images/Images';
-import { Texts, TextSize } from '../../../shared/ui/texts/Texts';
-import work1 from '../../../shared/assets/works1.png';
-import { Buttons, SizeButtons } from '../../../shared/ui/buttons/Buttons';
+import { Images } from 'shared/ui/images/Images';
+import { Texts, TextSize } from 'shared/ui/texts/Texts';
+import work1 from 'shared/assets/works1.png';
+import { Buttons, SizeButtons } from 'shared/ui/buttons/Buttons';
 import { useInView } from 'react-intersection-observer';
 import './OurWorks.css';
 
-export const OurWorks = () => {
+interface OurWorksProps {
+   modalIsOpen: () => void,
+}
+
+export const OurWorks = ({ modalIsOpen } : OurWorksProps) => {
    const {ref, inView} = useInView({
       threshold: 0.1,
       triggerOnce: true
@@ -40,7 +44,7 @@ export const OurWorks = () => {
                </div>
             </div>
          </div>
-         <Buttons size={SizeButtons.L}>
+         <Buttons onClick={modalIsOpen} size={SizeButtons.L}>
             <Texts size={TextSize.M} align='center' width={600} text='Закажи проект'/>
          </Buttons>
       </div>

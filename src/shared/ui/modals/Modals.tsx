@@ -43,7 +43,6 @@ export const Modals = (props : MyModalProps) => {
     const onHandlerClose = (e: MouseEvent) => {
         e.stopPropagation();
        let overlay = e.target as Element;
-       console.log(overlay.className);
        if(overlay.classList.contains("modal_overlay")) handlerClose();
     };
 

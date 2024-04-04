@@ -1,8 +1,7 @@
 import React from 'react';
-import { TextSize, Texts } from '../../../shared/ui/texts/Texts';
-import { Inputs } from '../../../shared/ui/inputs/Inputs';
-import { useInView } from 'react-intersection-observer';
-import { Buttons } from '../../../shared/ui/buttons/Buttons';
+import { TextSize, Texts } from 'shared/ui/texts/Texts';
+import { Inputs } from 'shared/ui/inputs/Inputs';
+import { Buttons } from 'shared/ui/buttons/Buttons';
 import "./SubscribeMe.css";
 
 export const SubscribeMe = () => {

@@ -1,14 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Images } from '../ui/images/Images';
-import img from '../assets/mainPic.png';
-import img2 from '../assets/background-image.jpeg';
-import img3 from '../assets/realistic.jpeg';
-import img4 from '../assets/mainBg2.jpeg';
+import React, { useEffect, useState } from 'react';
+import { Images } from 'shared/ui/images/Images';
 import img5 from '../assets/it-company50.jpeg';
-import { TextAlign, Texts } from '../ui/texts/Texts';
-import { TextSize } from '../ui/texts/Texts';
-import { Buttons } from '../ui/buttons/Buttons';
-import { SizeButtons } from '../ui/buttons/Buttons';
+import { Texts, TextAlign, TextSize } from 'shared/ui/texts/Texts';
+import { Buttons, SizeButtons } from 'shared/ui/buttons/Buttons';
 import { useInView } from 'react-intersection-observer';
 import './Banner.css';
 
@@ -30,13 +24,6 @@ export const Banner = ({ modalIsOpen }: BannerProps) => {
       setTestStyle2(testStyle);
    },[])
 
-   const shineTest = () => {
-      if(inView) {
-         console.log('Вижу')
-      } else {
-         console.log('Не вижу')
-      }
-   }
    return (
       <div  className='banner'>
          <Images img={img5} height={1000}/>

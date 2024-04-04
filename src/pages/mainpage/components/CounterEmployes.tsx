@@ -1,14 +1,13 @@
 import React from 'react';
-import { Images } from '../../../shared/ui/images/Images';
-import { Texts, TextAlign, TextSize } from '../../../shared/ui/texts/Texts';
-import helpersImg from '../../../shared/icons/helpers.svg';
-import sysAdmImg from '../../../shared/icons/sys.admin.svg';
-import ingenerImg from '../../../shared/icons/ingeners.svg';
-import buisnesImg from '../../../shared/icons/buis.analit.svg';
-import developImg from '../../../shared/icons/dev.svg';
-import './CounterEmployes.css';
+import { Images } from 'shared/ui/images/Images';
+import { Texts, TextAlign, TextSize } from 'shared/ui/texts/Texts';
+import helpersImg from 'shared/icons/helpers.svg';
+import sysAdmImg from 'shared/icons/sys.admin.svg';
+import ingenerImg from 'shared/icons/ingeners.svg';
+import buisnesImg from 'shared/icons/buis.analit.svg';
+import developImg from 'shared/icons/dev.svg';
 import { useInView } from 'react-intersection-observer';
-
+import './CounterEmployes.css';
 
 
 export const CounterEmployes = () => {

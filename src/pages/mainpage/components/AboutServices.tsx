@@ -1,17 +1,18 @@
 import React from 'react';
 import './AboutServices.css'
-import { TextSize, Texts, TextAlign } from '../../../shared/ui/texts/Texts';
-import { Images } from '../../../shared/ui/images/Images';
-import sysAdm from '../../../shared/assets/sysadm.webp';
-import dev from '../../../shared/assets/devsoftware.jpg';
-import analysis from '../../../shared/assets/analysisDate.jpg';
-import sysAdm2 from '../../../shared/assets/sysSecuri.jpeg';
-import dev2 from '../../../shared/assets/develop.jpeg';
-import analysis2 from '../../../shared/assets/dataAnalysis.jpeg';
-import { Buttons, SizeButtons } from '../../../shared/ui/buttons/Buttons';
+import { TextSize, Texts, TextAlign } from 'shared/ui/texts/Texts';
+import { Images } from 'shared/ui/images/Images';
+import sysAdm2 from 'shared/assets/sysSecuri.jpeg';
+import dev2 from 'shared/assets/develop.jpeg';
+import analysis2 from 'shared/assets/dataAnalysis.jpeg';
+import { Buttons, SizeButtons } from 'shared/ui/buttons/Buttons';
 import { useInView } from 'react-intersection-observer';
 
-export const AbousServices = () => {
+interface AbousServicesProps {
+   modalIsOpen: () => void,
+}
+
+export const AbousServices = ({ modalIsOpen }: AbousServicesProps) => {
    const {ref, inView} = useInView({
       threshold: 0.2,
       triggerOnce: true
@@ -26,7 +27,7 @@ export const AbousServices = () => {
                <span className='subtitle_about_services'>
                   <Texts size={TextSize.XL} width={700} text='Основные направления, на которых мы специализируемся'/>
                </span> 
-                <Buttons size={SizeButtons.L}>
+                <Buttons onClick={modalIsOpen} size={SizeButtons.L}>
                   <Texts align='center' size={TextSize.M} width={600} text='Заказать услуги'/>
                 </Buttons>
             </div>
