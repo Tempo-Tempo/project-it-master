@@ -43,7 +43,7 @@ const Mainpage = () => {
    return (
       <div className='main_page'>
          <div className='main_modal'>
-            <FormForFeedback isOpen={isOpen} isClose={() => isClose()}/>
+            <FormForFeedback isOpen={isOpen} isClose={() => isClose}/>
          </div>
          <div onClick={() => scrollToSection('navbar')} 
          className={`top_btn ${btnStyle}`}>
