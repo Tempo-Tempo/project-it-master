@@ -1,2 +1,2 @@
-import Footerbar from "./ui/Footerbar.tsx";
+import Footerbar from "./ui/Footerbar";
 export { Footerbar };

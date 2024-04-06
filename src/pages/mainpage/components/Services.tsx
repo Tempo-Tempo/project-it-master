@@ -1,29 +1,36 @@
-import React from 'react';
-import middleware from '../../../shared/icons/servicesIcons/middleware.svg';
-import monitor from '../../../shared/icons/servicesIcons/monitor.svg';
-import network from '../../../shared/icons/servicesIcons/network.svg';
-import camera from '../../../shared/icons/servicesIcons/bullet.svg';
-import buisnes from '../../../shared/icons/servicesIcons/buisnes.svg';
-import datebase from '../../../shared/icons/servicesIcons/database.svg';
-import { Images } from '../../../shared/ui/images/Images.tsx';
-import { TextAlign, TextSize, Texts } from '../../../shared/ui/texts/Texts.tsx';
-import './Services.css'
-import { Buttons, SizeButtons } from '../../../shared/ui/buttons/Buttons.tsx';
+import React, { useState } from 'react';
+import middleware from 'shared/icons/servicesIcons/middleware.svg';
+import monitor from 'shared/icons/servicesIcons/monitor.svg';
+import network from 'shared/icons/servicesIcons/network.svg';
+import camera from 'shared/icons/servicesIcons/bullet.svg';
+import buisnes from 'shared/icons/servicesIcons/buisnes.svg';
+import datebase from 'shared/icons/servicesIcons/database.svg';
+import { Images } from 'shared/ui/images/Images';
+import { TextAlign, TextSize, Texts } from 'shared/ui/texts/Texts';
+import { Buttons, SizeButtons } from 'shared/ui/buttons/Buttons';
 import { useInView } from 'react-intersection-observer';
-
+import './Services.css';
 
 export const Services = () => {
+
+   const [servicesIsOpen, setServicesIsOpen] = useState(false);
+
    const {ref, inView} = useInView({
       threshold: 0.2,
       triggerOnce: true
    })
 
    const testStyle = inView ? 'active' : 'nonactive';
+   const openStyleServices = !servicesIsOpen ? 'items_services_open' : 'items_services_close';
+
+   const openMoreSrvices = () => {
+      setServicesIsOpen(prev => !prev);
+   }
 
    return (
       <div className='container'>
          <div className='wrapper_services'>
-            <div ref={ref} className={`title_services ${testStyle}`}><Texts 
+            <div className={`title_services`}><Texts 
             color={'black'} 
             align={TextAlign.center} 
             size={TextSize.XL} text='Мы готовы предложить улучшения IT-инфраструктуры вашего бизнеса'
@@ -36,7 +43,8 @@ export const Services = () => {
             />
             </div>
             </div>
-            <ul className={`items_services ${testStyle}`}>
+            <div className={`${openStyleServices}`}>
+            <ul ref={ref} className={`items_services ${testStyle} ${openStyleServices}`}>
                <li className='item_services'>
                   <span className='img_wrapper'>
                      <span className='img_wrapper_v2'>
@@ -77,7 +85,7 @@ export const Services = () => {
                      </span>
                   </span>
                   <div className='body_services'>
-                     <Texts color={'black'} width={600} align={TextAlign.left} text='Обслуживаине систем видеонаблюдения'/>
+                     <Texts color={'black'} width={600} align={TextAlign.left} text='Обслуживанине систем видеонаблюдения'/>
                     <Texts color={'black'} width={400} text='Внедряем современные цифровые системы видеонаблюдения'/>
                   </div>    
                </li>
@@ -104,9 +112,13 @@ export const Services = () => {
                   </div>    
                </li>
             </ul>
-            <Buttons size={SizeButtons.L}>
-               <Texts size={TextSize.M} width={600} align={'center'} text='Все услуги'/>
+            </div>
+            { !servicesIsOpen ?  <Buttons onClick={openMoreSrvices} size={SizeButtons.L}>
+              <Texts size={TextSize.M} width={600} align={'center'} text='Все услуги'/>
+           </Buttons> : <Buttons onClick={openMoreSrvices} size={SizeButtons.L}>
+               <Texts size={TextSize.M} width={600} align={'center'} text='Скрыть'/>
             </Buttons>
+            }
          </div>
       </div>
    );

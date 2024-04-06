@@ -1,0 +1,64 @@
+.off_message_name {
+   position: absolute;
+   display: flex;
+   color: red;
+   font-size: 12px;
+   font-weight: bold;
+   top: 60%;
+   left: 5%;
+   transition: 0.3s all;
+   z-index: -1;
+   opacity: 0;
+}
+
+.on_message_name {
+   position: absolute;
+   display: flex;
+   color: red;
+   font-size: 12px;
+   font-weight: bold;
+   top: 60%;
+   left: 5%;
+   transition: 0.3s all;
+   z-index: -1;
+   opacity: 1;
+}
+
+.off_message_number {
+   position: absolute;
+   display: flex;
+   color: red;
+   font-size: 12px;
+   font-weight: bold;
+   top: 60%;
+   left: 5%;
+   transition: 0.3s all;
+   z-index: -1;
+   opacity: 0;
+}
+
+.on_message_number {
+   position: absolute;
+   display: flex;
+   color: red;
+   font-size: 12px;
+   font-weight: bold;
+   top: 60%;
+   left: 5%;
+   transition: 0.3s all;
+   z-index: -1;
+   opacity: 1;
+}
+
+.input_err_message_number {
+   border: 1px solid red;
+}
+
+.input_err_message_name {
+   border: 1px solid red;
+}
+
+.wrapper_input_name {
+   position: relative;
+   width: 100%;
+}

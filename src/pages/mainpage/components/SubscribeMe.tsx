@@ -1,27 +1,26 @@
 import React from 'react';
-import { TextSize, Texts } from '../../../shared/ui/texts/Texts.tsx';
-import { Buttons } from '../../../shared/ui/buttons/Buttons.tsx';
-import "./SubscribeMe.css"
-import { Inputs } from '../../../shared/ui/inputs/Inputs.tsx';
-import { useInView } from 'react-intersection-observer';
+import { TextSize, Texts } from 'shared/ui/texts/Texts';
+import { Inputs } from 'shared/ui/inputs/Inputs';
+import { Buttons } from 'shared/ui/buttons/Buttons';
+import "./SubscribeMe.css";
 
 export const SubscribeMe = () => {
 
-   const {ref, inView} = useInView({
-      threshold: 0.2,
-      triggerOnce: true
-   })
-   const imgStyle = inView ? 'activeImg' : 'nonactiveImg';
+   // const {ref, inView} = useInView({
+   //    threshold: 0.2,
+   //    triggerOnce: true
+   // })
+   // const imgStyle = inView ? 'activeImg' : 'nonactiveImg';
    return (
       <div className='wrapper_subs'>
          <div className="container">
-            <div ref={ref} className='title_subs'>
+            <div className='title_subs'>
                <Texts size={TextSize.L} color='black' width={700} text='Подпишитесь на нашу рассылку' />
             </div>
             <div className="subtitle_subs">
                <Texts size={TextSize.M} color='grey' width={500} text='Полезные статьи, акции, новости - получите все это сейчас!' />
             </div>
-            <div className={`form_for_sub ${imgStyle}`}>
+            <div className={`form_for_sub`}>
                <Inputs className='input_form_sub'/>
                <Buttons className='btn_form_sub'><Texts size={TextSize.M} width={600} align='center' text='Подписаться'/></Buttons>
             </div>

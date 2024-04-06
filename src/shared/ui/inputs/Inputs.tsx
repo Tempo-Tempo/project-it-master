@@ -22,7 +22,7 @@ export const Inputs = (props: MyInputProps) => {
     };
 
     return (
-        <input
+             <input
             ref={inputRef}
             className={className}
             type={typeInput}
@@ -30,6 +30,6 @@ export const Inputs = (props: MyInputProps) => {
             onChange={(e) => onChangeHandler(e)}
             disabled={disabled}
             {...otherProps}
-        />
+        /> 
     );
 };

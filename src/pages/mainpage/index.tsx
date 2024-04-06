@@ -1,2 +1,2 @@
-import Mainpage from "./ui/Mainpage.tsx";
+import Mainpage from "./ui/Mainpage";
 export { Mainpage };
