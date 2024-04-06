@@ -49,39 +49,39 @@
    padding: 10px;
 }
 
-button {
+.test1 {
    position: relative;
    overflow: hidden;
    transition: 0.3s all;
 }
 
-button:hover {
+.test1:hover {
    cursor: pointer;
    transform: scale(1.05);
    transition: 0.3s all;
 }
 
-button:hover::before {
+.test1:hover::before {
    left: calc(100% + 150px);
    transition: 2s;
 }
 
-button:focus::before {
+.test1:focus::before {
    left: calc(100% + 150px);
    transition: 2s;
 }
 
-button:focus::after {
+.test1:focus::after {
    left: calc(100% + 150px);
    transition: 2s;
 }
 
-button:hover::after {
+.test1:hover::after {
    left: calc(100% + 150px);
    transition: 2s;
 }
 
-button::before {
+.test1::before {
    content: '';
    position: absolute;
    top: 0;
@@ -93,7 +93,7 @@ button::before {
    transform: skew(-30deg);
 }
 
-button::after {
+.test1::after {
    content: '';
    position: absolute;
    top: 0;

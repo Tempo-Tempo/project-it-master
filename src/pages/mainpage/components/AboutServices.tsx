@@ -14,7 +14,7 @@ interface AbousServicesProps {
 
 export const AbousServices = ({ modalIsOpen }: AbousServicesProps) => {
    const {ref, inView} = useInView({
-      threshold: 0.2,
+      threshold: 0.4,
       triggerOnce: true
    })
 
@@ -31,7 +31,7 @@ export const AbousServices = ({ modalIsOpen }: AbousServicesProps) => {
                   <Texts align='center' size={TextSize.M} width={600} text='Заказать услуги'/>
                 </Buttons>
             </div>
-         <div className='items_abouts_services'>
+         <div ref={ref}  className='items_abouts_services'>
             <div className='item_about_services'>
                <Images  className={`img_service`} height={300}  img={sysAdm2} />
                   <span className={`${testStyle}`}>
@@ -39,7 +39,7 @@ export const AbousServices = ({ modalIsOpen }: AbousServicesProps) => {
                         <span className='num_item'>01.</span>
                            <Texts width={500} color='black' text='Администрирование сетей'/> 
                      </span>
-                     <span ref={ref} className='body_item'>
+                     <span className='body_item'>
                      <Texts color='grey' text='Настройка сетевых протоколов и служб: конфигурирование стека сетевых протоколов TCP/IP, настройка служб (HTTP, DHCP, DNS и др.), конфигурирование доменной инфраструктуры Active Directory.
                         Установка и настройка брандмауэров, систем обнаружения и предотвращения вторжений, антивирусной защиты, шифрование трафика.'/>
                      </span>
@@ -78,6 +78,48 @@ export const AbousServices = ({ modalIsOpen }: AbousServicesProps) => {
                   <span className={`${testStyle}`}>
                      <span className='title_item'>
                         <span className='num_item'>03.</span> 
+                           <Texts width={500} color='black' text='Анализ и сбор данных продукта'/> 
+                     </span>
+                     <span className='body_item'>
+                        <Texts color='grey' text=' Определение целей и задач анализа выявление ключевых вопросов об эффективности, востребованности и качестве производимого бизнес продукта.
+                          Выбор источников данных - опросы и отзывы клиентов, статистика продаж и использования, технические журналы и метрики продукта
+                          Выявление трендов и закономерностей.'/>
+                     </span> 
+                  </span>
+                  <a className={`${testStyle}`} href=""><Texts 
+                     text='Подробнее'
+                     color={'blue'}
+                     width={500}
+                     align={TextAlign.left}
+                     />
+                  </a>
+               </div>
+               <div className='item_about_services'>
+                     <Images height={300} className={`img_service `} img={analysis2} />
+                  <span className={`${testStyle}`}>
+                     <span className='title_item'>
+                        <span className='num_item'>04.</span> 
+                           <Texts width={500} color='black' text='Анализ и сбор данных продукта'/> 
+                     </span>
+                     <span className='body_item'>
+                        <Texts color='grey' text=' Определение целей и задач анализа выявление ключевых вопросов об эффективности, востребованности и качестве производимого бизнес продукта.
+                          Выбор источников данных - опросы и отзывы клиентов, статистика продаж и использования, технические журналы и метрики продукта
+                          Выявление трендов и закономерностей.'/>
+                     </span> 
+                  </span>
+                  <a className={`${testStyle}`} href=""><Texts 
+                     text='Подробнее'
+                     color={'blue'}
+                     width={500}
+                     align={TextAlign.left}
+                     />
+                  </a>
+               </div>
+                <div className='item_about_services'>
+                     <Images height={300} className={`img_service `} img={analysis2} />
+                  <span className={`${testStyle}`}>
+                     <span className='title_item'>
+                        <span className='num_item'>04.</span> 
                            <Texts width={500} color='black' text='Анализ и сбор данных продукта'/> 
                      </span>
                      <span className='body_item'>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navbar } from 'widget/navbar';
 import { Banner } from 'shared/banner/Banner';
 import { Services } from '../components/Services';
@@ -13,6 +13,7 @@ import { useInView } from 'react-intersection-observer';
 import top from 'shared/icons/top-arrow.svg';
 import { Images } from 'shared/ui/images/Images';
 import './Mainpage.css';
+import { Sliders } from 'shared/slider/Sliders';
 
 const Mainpage = () => {
 
@@ -22,6 +23,10 @@ const Mainpage = () => {
       setIsOpen(false);
       return;
    }
+
+   useEffect(() => {
+      setIsOpen(false);
+   }, [])
 
     const {ref, inView} = useInView({
       threshold: 0.2,
@@ -42,6 +47,7 @@ const Mainpage = () => {
 
    return (
       <div className='main_page'>
+
          <div className='main_modal'>
             <FormForFeedback isOpen={isOpen} isClose={() => isClose}/>
          </div>
@@ -79,7 +85,7 @@ const Mainpage = () => {
            <Footerbar />
          </section>
          </div>
-         
+         <Sliders />
       </div>
    );
 };

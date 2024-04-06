@@ -24,7 +24,7 @@ export const Buttons = (props: ButtonsProps) => {
         <button
             type="button"
             disabled={disabled}
-            className={`${className} ${size} `}
+            className={`${className} ${size} test1`}
             {...otherProps}
         >
             {children}

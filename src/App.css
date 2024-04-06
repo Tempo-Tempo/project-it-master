@@ -23,3 +23,7 @@ a:hover {
   opacity: 0.5;
   transition: 0.3s all;
 }
+
+.slick-next {
+  background: #000;
+}

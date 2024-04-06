@@ -16,6 +16,7 @@ export const Inputs = (props: MyInputProps) => {
     } = props;
 
     const inputRef = useRef<HTMLInputElement>(null);
+    
 
     const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         onChange?.(e.target.value);
