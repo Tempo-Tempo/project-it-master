@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/project-it-master/static/css/main.5e3e8d7d.css",
-    "main.js": "/project-it-master/static/js/main.e6c735ba.js",
+    "main.css": "/project-it-master/static/css/main.0fbe3d27.css",
+    "main.js": "/project-it-master/static/js/main.f5321790.js",
     "static/media/works1.png": "/project-it-master/static/media/works1.241c3b1fa2d647f479d2.png",
     "static/media/background-history.jpeg": "/project-it-master/static/media/background-history.e24f59dbd7cde3cc20f9.jpeg",
     "static/media/dataAnalysis.jpeg": "/project-it-master/static/media/dataAnalysis.d1deb6565929bfa90769.jpeg",
@@ -16,6 +16,10 @@
     "static/media/network.svg": "/project-it-master/static/media/network.182975d030ceb97edd96b579889d0336.svg",
     "static/media/bullet.svg": "/project-it-master/static/media/bullet.93edf37783d0dc0cc6d89c55632b2645.svg",
     "static/media/dev.svg": "/project-it-master/static/media/dev.5931f5133247c337aab943321454f7d9.svg",
+    "static/media/slick.svg": "/project-it-master/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/project-it-master/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/project-it-master/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/project-it-master/static/media/slick.295183786cd8a1389865.woff",
     "static/media/monitor.svg": "/project-it-master/static/media/monitor.9825d11de6c64740171f91d1928e69e6.svg",
     "static/media/middleware.svg": "/project-it-master/static/media/middleware.bc21665784f6373812a39db14e99650b.svg",
     "static/media/buisnes.svg": "/project-it-master/static/media/buisnes.4ebcb36c9adf63e793550e09996001c5.svg",
@@ -23,11 +27,11 @@
     "static/media/database.svg": "/project-it-master/static/media/database.655702a1cf2eeeca66211cc73123df7e.svg",
     "static/media/ok.svg": "/project-it-master/static/media/ok.c719fb18eafaabd61493bed06805343f.svg",
     "static/media/top-arrow.svg": "/project-it-master/static/media/top-arrow.89c4efd33d9a81228eec4b59591fef03.svg",
-    "main.5e3e8d7d.css.map": "/project-it-master/static/css/main.5e3e8d7d.css.map",
-    "main.e6c735ba.js.map": "/project-it-master/static/js/main.e6c735ba.js.map"
+    "main.0fbe3d27.css.map": "/project-it-master/static/css/main.0fbe3d27.css.map",
+    "main.f5321790.js.map": "/project-it-master/static/js/main.f5321790.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e3e8d7d.css",
-    "static/js/main.e6c735ba.js"
+    "static/css/main.0fbe3d27.css",
+    "static/js/main.f5321790.js"
   ]
 }
