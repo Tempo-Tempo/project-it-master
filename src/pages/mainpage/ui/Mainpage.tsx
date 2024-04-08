@@ -13,7 +13,6 @@ import { useInView } from 'react-intersection-observer';
 import top from 'shared/icons/top-arrow.svg';
 import { Images } from 'shared/ui/images/Images';
 import './Mainpage.css';
-import { Sliders } from 'shared/slider/Sliders';
 
 const Mainpage = () => {
 
@@ -29,10 +28,10 @@ const Mainpage = () => {
    }, [])
 
     const {ref, inView} = useInView({
-      threshold: 0.2,
+      threshold: 0.1,
    })
 
-   const btnStyle = inView ? 'activeImg' : 'nonactiveImg';
+   const btnStyle = !inView ? 'nonactiveImg' : 'activeImg';
 
    const modalIsOpen = () => {
       setIsOpen(prev => !prev);
@@ -41,7 +40,7 @@ const Mainpage = () => {
    const scrollToSection = (refName: string) => {
       const anyRef = document.getElementById(refName) as HTMLElement | null;
       anyRef?.scrollIntoView({
-         behavior: "smooth"
+        behavior: "smooth"
       })
    }
 
@@ -49,7 +48,7 @@ const Mainpage = () => {
       <div className='main_page'>
 
          <div className='main_modal'>
-            <FormForFeedback isOpen={isOpen} isClose={() => isClose}/>
+            <FormForFeedback isOpen={isOpen} isClose={() => isClose()}/>
          </div>
          <div onClick={() => scrollToSection('navbar')} 
          className={`top_btn ${btnStyle}`}>
@@ -85,7 +84,6 @@ const Mainpage = () => {
            <Footerbar />
          </section>
          </div>
-         <Sliders />
       </div>
    );
 };

@@ -85,7 +85,7 @@ export const Services = () => {
                      </span>
                   </span>
                   <div className='body_services'>
-                     <Texts color={'black'} width={600} align={TextAlign.left} text='Обслуживанине систем видеонаблюдения'/>
+                     <Texts color={'black'} width={600} align={TextAlign.left} text='Обслуживание и систем видеонаблюдения'/>
                     <Texts color={'black'} width={400} text='Внедряем современные цифровые системы видеонаблюдения'/>
                   </div>    
                </li>
